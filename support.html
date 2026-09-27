@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Offline AI Notepad</title>
+<meta name="description" content="Help and answers for Offline AI Notepad.">
+<style>
+  :root { --bg:#063b2c; --surface:#0b4a37; --line:#226b53; --ink:#eef1f3; --ink-2:#bac8c3; --ink-3:#93b3a6;
+          --gold:linear-gradient(135deg,#fff0b8 0%,#d4af37 30%,#f5dc86 55%,#b08a26 80%,#e3c35a 100%);
+          --backdrop:linear-gradient(135deg,#0c5a42 0%,#04291e 24%,#0e6248 46%,#042418 72%,#0a4d39 100%);
+          --card:linear-gradient(135deg,#1a7c5c 0%,#0b4a37 30%,#15694f 55%,#083d2d 82%,#11593f 100%); }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); background-image:var(--backdrop); background-attachment:fixed; color:var(--ink);
+         font:16px/1.7 -apple-system,BlinkMacSystemFont,"SF Pro Text",Segoe UI,Roboto,sans-serif;
+         -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:64px 20px 96px; }
+  .mark { width:64px; height:64px; display:block; margin:0 0 22px; border-radius:50%; }
+  h1 { font-size:clamp(30px,6vw,46px); margin:0 0 8px; letter-spacing:-0.02em; font-weight:700; line-height:1.15;
+       background:var(--gold); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .lede { font-size:19px; color:var(--ink-2); margin:0 0 36px; }
+  .updated { color:var(--ink-3); font-size:14px; margin:0 0 36px; }
+  h2 { font-size:20px; margin:44px 0 12px; font-weight:600; color:#e6c65c; }
+  p, li { color:var(--ink-2); }
+  strong { color:var(--ink); font-weight:600; }
+  .panel { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:22px 24px; margin:24px 0; }
+  .panel p:first-child, .panel h3:first-child { margin-top:0; } .panel p:last-child { margin-bottom:0; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px; margin:24px 0; }
+  .grid .panel { margin:0; }
+  h3 { margin:0 0 6px; font-size:17px; color:#e6c65c; }
+  ul { padding-left:20px; }
+  table { width:100%; border-collapse:collapse; margin:16px 0; font-size:15px; }
+  th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); color:var(--ink-2); vertical-align:top; }
+  th { color:var(--ink); font-weight:600; }
+  a { color:#e6c65c; }
+  pre { white-space:pre-wrap; font-size:12px; color:var(--ink-3); background:rgba(0,0,0,.18); padding:16px; border-radius:12px; overflow-x:auto; }
+  footer { border-top:1px solid var(--line); margin-top:56px; padding-top:24px; color:var(--ink-3); font-size:14px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<svg class="mark" viewBox="0 0 100 100" aria-hidden="true">
+  <defs>
+    <clipPath id="disc"><circle cx="50" cy="50" r="50"/></clipPath>
+    <linearGradient id="grey" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4a4d52"/><stop offset=".4" stop-color="#2a2c30"/>
+      <stop offset=".65" stop-color="#3a3d42"/><stop offset="1" stop-color="#1c1d20"/></linearGradient>
+    <linearGradient id="emerald" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3fe0a4"/><stop offset=".3" stop-color="#0b8a60"/>
+      <stop offset=".52" stop-color="#5cf0b8"/><stop offset=".78" stop-color="#075c40"/><stop offset="1" stop-color="#0e9c6c"/></linearGradient>
+    <linearGradient id="goldleaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0b8"/><stop offset=".35" stop-color="#d4af37"/>
+      <stop offset=".6" stop-color="#f6de8a"/><stop offset="1" stop-color="#a9821f"/></linearGradient>
+  </defs>
+  <g clip-path="url(#disc)">
+    <rect x="0" y="0" width="50" height="100" fill="url(#grey)"/>
+    <rect x="50" y="0" width="50" height="100" fill="url(#emerald)"/>
+  </g>
+  <rect x="29.75" y="24.75" width="40.5" height="50.5" rx="6" fill="none" stroke="url(#goldleaf)" stroke-width="5.5"/>
+  <g stroke="url(#goldleaf)" stroke-width="4.5" stroke-linecap="round">
+    <line x1="37.5" y1="41.5" x2="62.5" y2="41.5"/><line x1="37.5" y1="50.5" x2="62.5" y2="50.5"/><line x1="37.5" y1="59.5" x2="54.5" y2="59.5"/>
+  </g>
+  <path d="M71.5 13.5 Q74.3 20.7 81.5 23.5 Q74.3 26.3 71.5 33.5 Q68.7 26.3 61.5 23.5 Q68.7 20.7 71.5 13.5 Z" fill="url(#goldleaf)"/>
+</svg>
+
+<h1>Support</h1>
+<p class="lede">Answers to the questions people ask most. If yours isn't here, email the address at the bottom.</p>
+
+<h2>Writing and formatting</h2>
+<div class="panel"><h3>How do I make a checklist?</h3><p>Type <code>[] </code> at the start of a line, or tap the checklist button above the keyboard. Tap a box to tick it — any time, even while typing. Return adds the next item; Return on an empty item ends the list. The ⋯ menu can untick everything or remove ticked items.</p></div><div class="panel"><h3>What formatting is there?</h3><p>Checklists, bullets (<code>- </code>), numbered lists (<code>1. </code>), headings (<code># </code>), quotes (<code>&gt; </code>), dividers (<code>---</code>), <strong>**bold**</strong>, <em>*italic*</em>, ~~strike~~ and <code>`code`</code>. Type the marks, or use the buttons above the keyboard. Notes are saved as plain text, so they read well wherever you share them.</p></div><div class="panel"><h3>How do I nest a list?</h3><p>Use the indent and outdent buttons above the keyboard. Return keeps the same level.</p></div><div class="panel"><h3>Undo and redo</h3><p>The arrows above the keyboard — or at the top of the note when you’re not typing — undo and redo typing, formatting, ticks and photos. For bigger steps back, use History.</p></div>
+
+<h2>Organising</h2>
+<div class="panel"><h3>Folders</h3><p>Tap the folder button beside search to switch folders, or to make, rename and delete them. Move a note from its ⋯ menu. A new note goes into the folder you’re looking at. Deleting a folder never deletes its notes — they move to No folder.</p></div><div class="panel"><h3>Tags</h3><p>Type a word with a hash anywhere in a note — <code>#work</code>, <code>#recipes</code>. Tags appear as chips above the list; tap one to show only those notes.</p></div><div class="panel"><h3>Photos</h3><p>Tap the photo button above the keyboard, or Add photo in the ⋯ menu. Tap a photo in a note to remove it. Photos stay on your device and are never given to the AI.</p></div><div class="panel"><h3>Search</h3><p>Search finds notes containing every word you type, in any order. Open a result and the matches are highlighted inside the note; tap × on the gold bar to clear them.</p></div>
+
+<h2>The AI</h2>
+<div class="panel"><h3>Does it need the internet?</h3><p>No. The model is built into the app and runs on your device. It works in flight mode.</p></div><div class="panel"><h3>Why is the first AI action slow?</h3><p>The model loads the first time you use an AI tool in a session — a few seconds on recent devices. After that, actions start straight away.</p></div><div class="panel"><h3>The AI got something wrong</h3><p>It’s a small model and it can mix up names or details. Nothing changes until you tap Replace or Add; rewrites have a Changes view; added figures are flagged; answers in Ask show the matching sentence from your own note. Any applied change can be undone from the pop-up, the undo arrow, or History.</p></div><div class="panel"><h3>Why does a long note take several steps?</h3><p>Long notes are worked through a few paragraphs at a time so the model never loses track — you’ll see “part 2 of 4”. Summaries of long notes are combined into one at the end.</p></div><div class="panel"><h3>Which languages can it translate to?</h3><p>English, Spanish, French, German, Italian, Portuguese, Hindi and Thai.</p></div>
+
+<h2>History</h2>
+<div class="panel"><h3>When is a version saved?</h3><p>Before every AI change, when you leave a note you edited, and whenever you tap Save version. Each note keeps its last five.</p></div><div class="panel"><h3>How do I go back?</h3><p>Open the note, tap the clock icon, pick a version. “Changes since” shows what is different now, word by word; Restore puts it back. The text you restored over becomes the newest version, so you can switch back again.</p></div>
+
+<h2>Your notes</h2>
+<div class="panel"><h3>How do I back up my notes?</h3><p>Settings → Export all notes as text, then save or send the file wherever you like. The app has no sync of its own.</p></div><div class="panel"><h3>The app said my notes were recovered</h3><p>The saved file couldn’t be read, so the app restored the backup it keeps beside it. The last few seconds of typing may be missing. The damaged file is kept, not deleted.</p></div><div class="panel"><h3>Does it cost anything or need an account?</h3><p>No account, no sign-in, no subscription.</p></div>
+
+<h2>Contact</h2>
+<p>Email <a href="mailto:sivavimelrajhen@gmail.com">sivavimelrajhen@gmail.com</a> with your device model and iOS version. There is no account system, so there is nothing to look up — just describe what happened.</p>
+
+<footer>Offline AI Notepad · Contact: <a href="mailto:sivavimelrajhen@gmail.com">sivavimelrajhen@gmail.com</a><br>Built with Llama.</footer>
+</div>
+</body>
+</html>
